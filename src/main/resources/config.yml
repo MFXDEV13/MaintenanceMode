@@ -1,0 +1,16 @@
+
+maintenance:
+  enabled: false
+  kick-existing-players: true
+
+messages:
+  prefix: "&8[&cMaintenance&8] "
+  kick: "&cServer sedang dalam maintenance!"
+  join: "&cServer sedang maintenance. Silakan coba lagi nanti."
+  enabled: "&aMaintenance berhasil diaktifkan."
+  disabled: "&aMaintenance berhasil dinonaktifkan."
+  already-enabled: "&eMaintenance sudah aktif."
+  already-disabled: "&eMaintenance sudah nonaktif."
+  no-permission: "&cKamu tidak memiliki permission."
+  player-only: "&cCommand ini hanya bisa digunakan oleh pemain."
+  reloaded: "&aKonfigurasi berhasil dimuat ulang."
