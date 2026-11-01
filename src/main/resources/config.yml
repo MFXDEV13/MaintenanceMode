@@ -5,12 +5,27 @@ maintenance:
 
 messages:
   prefix: "&8[&cMaintenance&8] "
+
   kick: "&cServer sedang dalam maintenance!"
   join: "&cServer sedang maintenance. Silakan coba lagi nanti."
+
   enabled: "&aMaintenance berhasil diaktifkan."
   disabled: "&aMaintenance berhasil dinonaktifkan."
   already-enabled: "&eMaintenance sudah aktif."
   already-disabled: "&eMaintenance sudah nonaktif."
+
   no-permission: "&cKamu tidak memiliki permission."
-  player-only: "&cCommand ini hanya bisa digunakan oleh pemain."
+  unknown-command: "&cSub-command tidak dikenal."
+  usage: "&7Gunakan: &f/maintenance <on|off|status|reload|add|remove|list>"
   reloaded: "&aKonfigurasi berhasil dimuat ulang."
+
+  status: "&7Maintenance: %status%"
+
+  whitelist-added: "&a%player% berhasil ditambahkan ke whitelist."
+  whitelist-removed: "&a%player% berhasil dihapus dari whitelist."
+  whitelist-already-added: "&e%player% sudah ada di whitelist."
+  whitelist-not-found: "&c%player% tidak ditemukan di whitelist."
+  whitelist-player-unknown: "&cPemain tidak ditemukan. Pemain harus pernah masuk server."
+  whitelist-list-empty: "&eBelum ada pemain dalam whitelist."
+  whitelist-list-header: "&6Daftar Maintenance Whitelist:"
+  whitelist-list-entry: "&7- &f%player%"

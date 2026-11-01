@@ -22,18 +22,20 @@ public final class MaintenanceMode extends JavaPlugin {
         );
 
         MaintenanceCommand command =
-                new MaintenanceCommand(this, maintenanceManager);
+                new MaintenanceCommand(maintenanceManager);
 
-        if (getCommand("maintenance") != null) {
-            getCommand("maintenance").setExecutor(command);
-            getCommand("maintenance").setTabCompleter(command);
-        } else {
-            getLogger().severe("Command 'maintenance' tidak ditemukan di plugin.yml!");
+        if (getCommand("maintenance") == null) {
+            getLogger().severe(
+                    "Command 'maintenance' tidak ditemukan di plugin.yml!"
+            );
             getServer().getPluginManager().disablePlugin(this);
             return;
         }
 
-        getLogger().info("MaintenanceMode berhasil diaktifkan!");
+        getCommand("maintenance").setExecutor(command);
+        getCommand("maintenance").setTabCompleter(command);
+
+        getLogger().info("MaintenanceMode v1.1.0 berhasil diaktifkan!");
         getLogger().info("Maintenance status: " +
                 (maintenanceManager.isEnabled() ? "ON" : "OFF"));
     }

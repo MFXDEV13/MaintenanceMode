@@ -1,6 +1,6 @@
 
 name: MaintenanceMode
-version: 1.0.0
+version: 1.1.0
 main: com.devkry.maintenance.MaintenanceMode
 api-version: '26.2'
 author: DevKry
@@ -9,8 +9,9 @@ description: Lightweight server maintenance management plugin
 commands:
   maintenance:
     description: Manage server maintenance mode
-    usage: /maintenance <on|off|status|reload>
-    aliases: [maint]
+    usage: /maintenance <on|off|status|reload|add|remove|list>
+    aliases:
+      - maint
 
 permissions:
   maintenance.admin:

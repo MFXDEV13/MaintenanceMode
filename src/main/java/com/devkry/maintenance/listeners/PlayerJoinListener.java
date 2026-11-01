@@ -24,6 +24,10 @@ public class PlayerJoinListener implements Listener {
             return;
         }
 
+        if (manager.isWhitelisted(event.getPlayer().getUniqueId())) {
+            return;
+        }
+
         event.getPlayer().kick(
                 manager.getMessage("messages.join")
         );
